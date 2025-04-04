@@ -1,0 +1,125 @@
+body {
+    margin: 24;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+  }
+  header {
+display: flex;
+flex-direction: row;
+    padding: auto;
+    background: linear-gradient(45deg, blue, black, blue);
+    padding: 24px ;
+    margin: 0px;
+    font-size: 32px;
+    color: white;
+  }
+
+#img-perfil{
+    max-width: 35%;
+    max-height: 500px;
+    margin: 24px;
+    transform: perspective(2000px)
+               rotateY(45deg)
+               skewY(0.2rad);
+    border-radius: 25px;
+}
+#img-perfil:hover{
+  transform: perspective(2000px)
+  rotateX(45deg)
+  skewX(0.2rad);
+}
+.section-header {
+    max-width: 35%;
+    max-height: 400px;
+    padding: 24px;
+    margin: 24px;
+    font-size: 24px;
+    background: gainsboro;
+    border-radius: 25px;
+    background:radial-gradient(black, blue, black)
+  }
+  .section-header:hover{
+    background:radial-gradient(blue, black, blue)
+  }
+  main {
+    display: flex;
+    flex: 1;
+  }
+  li {
+    font-size: 24px;
+    list-style-type: none;
+  }
+  
+ .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    background: linear-gradient(120deg, yellow, black, yellow);
+    /* margin: 24px; */
+ }
+
+  section {
+    min-width: 40%;
+    padding: 8px;
+    margin: 10px;
+    font-size: 24px;
+    background:linear-gradient(45deg, black, red);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .img-proyectos{
+    max-width: 100%;
+    min-height: 200px;
+    border-radius: 25px;
+  }
+.img-proyectos:hover{
+  max-width: auto;
+  min-height: 220px;
+}
+  footer {
+    height: 96px;
+    background: darkslateblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+  }
+  #e-mail{
+    font-size: xx-large;
+    color: aliceblue;
+  }
+
+  @media (max-width: 600px) {
+
+    header {
+        text-align: center;
+        padding: 8px;
+        /* margin: 8px; */
+        flex-direction: column;
+      }
+      #img-perfil{
+        max-width: 100%;
+        min-height: auto;
+        margin: 8px;
+    }
+    .section-header {
+        max-width: 100%;
+        min-height: auto;
+        margin: 8px;
+      }
+    main {
+      flex-direction: column;
+    }
+    aside {
+      width: auto;
+    }
+    ul {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      padding: 0;
+    }
+  } 
